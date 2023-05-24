@@ -12,7 +12,7 @@ public class OrderOfElementsInListTest {
 		Book wellOfAscension = new Book("The Well of Ascension", 2, fantasyShelf);
 		
 		assertThat(fantasyShelf.getBooks()).containsSequence(mistborn, wellOfAscension);	
-		assertThat(fantasyShelf.getBooks()).contains(mistborn, wellOfAscension);
+		assertThat(fantasyShelf.getBooks()).contains(wellOfAscension, mistborn);
 		
 		int numOfCopies = 0;
 		for(Book book : fantasyShelf.getBooks()) {

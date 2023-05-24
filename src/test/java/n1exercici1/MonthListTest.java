@@ -16,7 +16,7 @@ public class MonthListTest {
 	@Test
 	public void listIsNotNull() {
 		MonthList monthlist = new MonthList();
-		assertNotNull(monthlist.getMonths().size());
+		assertNotNull(monthlist.getMonths());
 	}
 	//Verify August is in 8th position (index 7)
 	@Test
