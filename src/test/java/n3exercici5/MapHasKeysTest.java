@@ -1,14 +1,20 @@
 package n3exercici5;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.*;
+import org.junit.Test;
+import java.util.*;
 
-import org.junit.jupiter.api.Test;
 
-class MapHasKeysTest {
+public class MapHasKeysTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void mapHasSpecificKey() {
+		
+		HashMap<String, String> countries = new HashMap<String, String>();
+		countries.put("Spain", "Madrid");
+		countries.put("France", "Paris");
+		countries.put("Germany", "Berlin");
+		
+		assertThat(countries).containsKey("Spain");
 	}
-
 }
